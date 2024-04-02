@@ -19,8 +19,20 @@ brew install git just
 
 brew update && brew outdated && brew upgrade && brew bundle --file=~/.config/brew/Brewfile && brew cleanup
 
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
 (echo; echo '. /opt/homebrew/opt/asdf/libexec/asdf.sh') >> /Users/cvs/.zshrc
+
+# starship
+
+(echo; echo 'eval "$(starship init zsh)"') >> /Users/cvs/.zshrc
+
+# ALSO REMEMBER WE DON'T HAVE TO TOSS EVERYTHING INTO
+# `.zshrc`. We want it nice and usable if someone doesn't have their
+# `dotfiles` decided yet (they really should pickup the default 
+# `binaryblade` `dotfiles` and edit from there) BUT not everyone will
+# want to do that. And that's ok. That's what FOSS is all about
+# I'm not currently sure what the default "minimal" `.zshrc` should
+# look like though.
+
 
 # asdf all the things
 echo "== asdf plugins =="
