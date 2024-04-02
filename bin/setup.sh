@@ -9,7 +9,7 @@ if ! command -v brew &> /dev/null; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/cvs/.zshrc
   eval "$(/opt/homebrew/bin/brew shellenv)"
-  . ~/.zsh
+  . ~/.zshrc
 fi
 
 # download dotfiles and execute
@@ -39,23 +39,22 @@ echo "== asdf plugins =="
 asdf plugin add doctl
 asdf plugin add nodejs
 asdf plugin add postgres
+asdf plugin add restic
 asdf plugin add ruby
 asdf plugin add rust
 
 asdf install doctl latest
-
 asdf install nodejs latest
 asdf install nodejs 18.17.1
-
 # asdf install postgres latest
-
+asdf install restic latest
 asdf install ruby latest
-
 asdf install rust latest
 
 asdf global doctl latest
 asdf global nodejs latest
 # asdf global postgres latest
+asdf global restic latest
 asdf global ruby latest 
 asdf global rust latest
 
