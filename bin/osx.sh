@@ -18,7 +18,7 @@ defaults write NSGlobalDomain _HIHideMenuBar -bool true
 
 # other things to add:
 # safari: restore tabs
-# general: 
+# general:
 # keyboards: capslock = control
 
 ###############################################################################
