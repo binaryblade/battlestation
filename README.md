@@ -14,7 +14,6 @@ Supported:
 - macOS Ventura (13.x) on Apple Silicon
 - macOS Monterey (12.x) on Apple Silicon
 
-
 These should work on Intel Macs as well, but I don't have any left to test.
 
 Older versions should work, but aren't regularly tested (I do want to build out a reasonable testing infrastructure when I get a chance). Bug reports are welcome; but may take a while to test.
@@ -25,13 +24,17 @@ Older versions should work, but aren't regularly tested (I do want to build out 
 - Review
 - Execute
 
+Find a way to install https://developer.apple.com/safari/technology-preview/ automatically.
+
+Find a way to configure shells for TouchID / Watch Unlock on macOS (in `pam` modules). Is this better for dotfiles? Or does it align with the `osx` config file? Should the `osx` config file be part of dotfiles? (I'm leaning toward it's fine in here...BUT some users may want customizations--don't own an Apple Watch, for instance?)
+
 ### Dotfiles
 
 The installation will install my dotfiles, but I want to make this optional in the future. (I expect I'll support some command line parameters.)
 
 ## Results
 
-Battlestation installs a variety of command line utilities and other tooling for use in general development and DevOps, along with various languages we use. 
+Battlestation installs a variety of command line utilities and other tooling for use in general development and DevOps, along with various languages we use.
 
 (Expand details later.)
 
@@ -49,7 +52,8 @@ Tip: Make a "golden image" of your preferred versions of macOS completed and you
 
 Copyright © 2024 Binary Blade, LLC. It is free software, and may be distributed under the terms specified in the LICENSE file.
 
-### 
+###
+
 (Expand details later.)
 
 ## Customization
@@ -71,4 +75,3 @@ Copyright © 2024 Binary Blade, LLC. It is free software, and may be redistribut
 This repo is maintained and funded by Binary Blade, LLC. The names and logos for binaryblade are trademarks of Binary BLade, LLC.
 
 We love open source software! See our other projects and please consider hiring us to help develop your open source (or closed source) portfolio. In modern society, every company is a software company.
- 
